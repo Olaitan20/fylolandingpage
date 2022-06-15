@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              VeryDarkBlue: "hsl(243, 87%, 12%)",
+              DesaturatedBlue: "hsl(238, 22%, 44%)",
+              BrightBlue: "hsl(224, 93%, 58%)",
+              ModerateCyan: "hsl(170, 45%, 43%)",
+              LightGrayishBlue: "hsl(240, 75%, 98%)",
+              LightGray: "hsl(0, 0%, 75%)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center px-20 my-4">
+        <img src="./images/logo.svg" alt="" class="w-1/5" />
+
+        <ul class="flex gap-2 text-sm md:text-xl gap-10">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+
+      <section class="mt-20 px-20 md:flex flex-row-reverse items-center gap-15">
+        <div class="mb-10">
+          <img src="./images/illustration-1.svg" alt="" />
+        </div>
+        <article class="text-center md:text-start">
+          <h1 class="text-2xl font-bold mb-10">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+
+          <p class="mb-6 text-DesaturatedBlue">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="w-full mb-6 outline outline-1 outline-VeryDarkBlue p-2 rounded-md md:w-2/5 mr-4"
+          />
+          <button
+            class="w-full bg-BrightBlue text-white font-bold p-2 rounded-md md:w-1/5"
+          >
+            Get Started
+          </button>
+        </article>
+      </section>
+    </header>
+
+    <section
+      class="mt-20 px-20 pb-9 md:flex flex-row items-center gap-15 bg-LightGrayishBlue"
+    >
+      <div class="mb-10">
+        <img src="./images/illustration-2.svg" alt="" class="w-4/5" />
+      </div>
+      <article class="text-center md:text-start">
+        <h1 class="text-2xl font-bold mt-10 mb-10">
+          Stay productive, wherever you are
+        </h1>
+
+        <p class="mb-6 text-DesaturatedBlue">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+
+          <br />
+          <br />
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required!
+        </p>
+        <div class="flex gap-2 items-center text-ModerateCyan mb-10">
+          <a href="#">See how Fylo works</a>
+          <img src="./images/icon-arrow.svg" alt="" />
+        </div>
+        <div class="text-start bg-white p-9 rounded-md drop-shadow-md md:w-3/5">
+          <img src="./images/icon-quotes.svg" alt="" class="mb-10" />
+          <p class="mb-10 text-DesaturatedBlue">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="flex gap-3 items-center">
+            <img
+              src="./images/avatar-testimonial.jpg"
+              alt=""
+              class="rounded-full w-1/5 h-1/5"
+            />
+            <div>
+              <h1 class="text-2xl font-bold">Kyle Burton</h1>
+              <p>Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="bg-DesaturatedBlue md:flex gap-20 items-center">
+      <article class="px-20 text-center py-20 md: text-start">
+        <h1 class="text-2xl font-bold mb-6 text-LightGrayishBlue">
+          Get early access today
+        </h1>
+        <p class="text-LightGray">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. <br />
+          If you have any questions, our support team would be happy to help
+          you.
+        </p>
+      </article>
+      <div class="px-20">
+        <input
+          type="text"
+          placeholder="email@example.com"
+          class="w-full mt-6 mb-6 outline outline-1 outline-VeryDarkBlue p-2 rounded-md md:w-full pr-52"
+        />
+        <button
+          class="w-full bg-BrightBlue text-white p-2 rounded-md md:w-3/5 block"
+        >
+          Get Started For Free
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-VeryDarkBlue">
+      <div class="px-20 mb-10 pt-5">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="px-20 flex justify-between">
+        <ul class="text-white">
+          <li>Phone: +1-543-123-4567</li>
+          <li>example@fylo.com</li>
+        </ul>
+        <ul class="text-white">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blogs</li>
+        </ul>
+        <ul class="text-white">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+       
+    </footer>
+
+    <!-- Features
+  Team
+  Sign In
+
+  All your files in one secure location, accessible anywhere.
+
+  Fylo stores your most important files in one secure location. 
+  Access them wherever you need, share and collaborate with friends, 
+  family, and co-workers.
+
+  Get Started
+
+  Stay productive, wherever you are
+
+  Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+
+  See how Fylo works
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy -->
+
+    <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  </body>
+</html>
